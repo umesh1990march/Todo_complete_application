@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos/?priority=HIG
+
+###
+GET http://localhost:3000/agenda/?date=2021-43-04
+
+###
+DELETE http://localhost:3000/todos/1
+
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Buying Cloths",
+  "priority": "LOW",
+  "status": "IN PROGRESS",
+  "category": "HOME",
+  "dueDate": "2021-07-22"
+}
+
+###
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{
+    "priority":"LOW"
+}
